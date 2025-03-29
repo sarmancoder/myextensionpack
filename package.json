@@ -4,6 +4,9 @@
     "description": "Favourite extensions",
     "version": "1.0.0",
     "publisher": "sarmancoder",
+    "scripts": {
+        "package": "vsce package"
+    },
     "repository": {
         "url": "https://github.com/sarmancoder/myextensionpack"
     },
