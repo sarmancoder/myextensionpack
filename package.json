@@ -2,7 +2,7 @@
     "name": "sarman-extensionpack",
     "displayName": "Sarman extension pack",
     "description": "Favourite extensions",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "sarmancoder",
     "scripts": {
         "package": "vsce package"
@@ -14,8 +14,29 @@
         "vscode": "^1.75.0"
     },
     "categories": [
-        "Extension Packs"
+        "Extension Packs",
+        "Snippets"
     ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "javascriptreact",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "typescriptreact",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    },
     "extensionPack": [
         "dbaeumer.vscode-eslint",
         "eamodio.gitlens",
@@ -33,6 +54,10 @@
         "bradlc.vscode-tailwindcss",
         "emmanuelbeziat.vscode-great-icons",
         "Vue.volar",
-        "exer7um.vue-3-vscode-snippets"
+        "exer7um.vue-3-vscode-snippets",
+        "hakcorp.php-awesome-snippets",
+        "vsc-snippets.vsc-php-snippets",
+        "vscodeshift.material-ui-snippets",
+        "YoavBls.pretty-ts-errors"
     ]
 }
